@@ -1,0 +1,6 @@
+- from:
+    uri: "timer:aaaa?period=1000"
+    steps:
+      - set-body:
+          constant: "Hello Camel K from yaml"
+      - to: "log:info"
